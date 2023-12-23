@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        color: white;
+      }
+    /* Agrega estilos de modal básicos */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      border-radius: 15%; /* Añadido border radius del 20% */
+      font-family: 'Roboto', sans-serif; /* Añadida fuente de letra Roboto */
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .modal-content {
+        width: 90%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <title>Gift Box Animation</title>
+</head>
+<body>
+    <h1>De Guatemala para Glenda Elaine</h1>
+  <div class="box">
+    <div class="box-tape">
+      <div class="box-tape-left"></div>
+      <div class="box-tape-right"></div>
+      <div class="box-tape-center"></div>
+    </div>
+    <div class="box-gifts">
+      <div class="box-gift-shadow"></div>
+    </div>
+    <div class="box-gift"></div>
+    <div class="box-star box-star-1"></div>
+    <div class="box-star box-star-2"></div>
+    <div class="box-star box-star-3"></div>
+    <div class="box-star box-star-4"></div>
+    <div class="box-star box-star-5"></div>
+  </div>
+
+  <div id="giftCardModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeGiftCardModal()">&times;</span>
+      <p>CongraTULAtions haz optenido unos Tickets validos en Felipe</p>
+      <p>x3 en Ticket para que Felipe haga algo que no quiera por cagon</p>
+      <p>x1 en Ticket para que Felipe se enchile con comida picante</p>
+      <p>x2 en Ticket para que Felipe cante te cante una cancion de cuna</p>
+      <p>x2 en Ticket para que Felipe te acompañe a un lugar que no quiere ir porque no le gusta (no se hace cargo de las concecuencias)</p>
+      <p>x3 en Ticket para que Felipe baile pese a que no sabe</p>
+      <p>Con mucho amor:</p>
+      <img src="https://media.discordapp.net/attachments/677029263542583320/1187967740011618405/lalo.png?ex=6598d02c&is=65865b2c&hm=a1f149c3cfba14d781d9bff5758934e77d1b2307c9d4082827fe0237f46c9c89&=&format=webp&quality=lossless" />
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const box = document.querySelector('.box');
+      
+      box.addEventListener('click', function () {
+        showGiftCard();
+      });
+
+      function showGiftCard() {
+        const modal = document.getElementById('giftCardModal');
+        modal.style.display = 'block';
+      }
+
+      window.closeGiftCardModal = function () {
+        const modal = document.getElementById('giftCardModal');
+        modal.style.display = 'none';
+      };
+
+      // Cierra el modal si se hace clic fuera de él
+      window.addEventListener('click', function (event) {
+        const modal = document.getElementById('giftCardModal');
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

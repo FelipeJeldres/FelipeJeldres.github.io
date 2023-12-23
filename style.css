@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #411755;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.box{
+    position: relative;
+    width: 18em;
+    height: 18em;
+}
+.box-tape,
+.box-tape-left,
+.box-tape-right,
+.box-gifts,
+.box-gift-shadow,
+.box-gift,
+.box-star {
+    position: absolute;
+}
+.box-tape-center, .box-tape-left, .box-tape-right{
+    background-color: #cd7baa;
+}
+.box-tape {
+    animation: bTape 1.5s ease-in-out infinite;
+    bottom: 11em;
+    left: 7.5em;
+    width: 3em;
+    height: 2em;
+    transform-origin: 50% 230% ;
+}
+.box-tape-center {
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+}
+.box-tape-left, .box-tape-right{
+    box-shadow: 0 0 0 0.7em #ee99c9 inset;
+    top: 0.3em;
+    width: 4em;
+    height: 5em;
+    z-index: -1;
+}
+
+.box-tape-left::before,
+.box-tape-right::before {
+    background-color: #ee99c9;
+    border-radius: inherit;
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+}
+.box-tape-left {
+    animation: bLeft 1.5s ease-in-out infinite;
+    border-radius: 1.5em 0 3em 1em / 1.5em 0 3em 3.5em;
+    right: calc(100% - 0.75em);
+    transform: rotate(35deg);
+    transform-origin: 100% 15%;
+}
+.box-tape-left::before{
+    clip-path: polygon(0 42%, 100% 12%, 100% 100%, 0 100%);
+}
+.box-tape-right{
+    animation: bRight 1.5s ease-in-out infinite;
+    border-radius: 0 1.5em 1em 3em / 0 1.5em 3.5em 3em;
+    left: calc(100% - 0.75em);
+    transform: rotate(-35deg);
+    transform-origin: 0% 15%;
+}
+.box-tape-right::before{
+    clip-path: polygon(0 12%, 100% 42%,100% 100%, 0 100%);
+}
+.box-gifts, 
+.box-gift, 
+.box-gift-shadow{
+    transform-origin: 50% 100%;
+}
+.box-gifts{
+    animation: box-Bounce 1.5s ease-in-out infinite;
+    background: linear-gradient(#ee99c9, #ee99c9) 50% 50% / 3.3em 100%
+    no-repeat, #ffcee9;
+    border-radius: 1.5em;
+    bottom: 0.5em;
+    left: 3.3em;
+    overflow:  hidden;
+    width: 11.4em;
+    height:  9em;
+}
+.box-gift,
+.box-gift-shadow{
+    border-radius: 1em;
+    width: 13em;
+    height: 3.3em;
+}
+.box-gift {
+    animation: box-Bonuce2 1.5s ease-in-out infinite;
+    background: linear-gradient(#ee99c9, #ee99c9) 50% 50% / 3.3em 100%
+    no-repeat, #ffcee9;
+    bottom: 8.7em;
+    left:  2.5em;
+}
+.box-gift-shadow {
+    animation: boxShadowBounce 1.5s ease-in-out infinite;
+    background-color: #00000010;
+    top: -1.5em;
+    left: -1em;
+}
+.box-star{
+    animation: startRotate1 1.5s ease-in-out infinite;
+    background-color: #fcff50;
+    clip-path: polygon(50% 0, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0 50%, 35% 35%);
+    transform: scale(0);
+}
+.box-star-2, .box-star-4, .box-star-5{
+    animation: startRotate2;
+}
+.box-star-1 {
+    animation-delay: calc(1.5s * 0.5);
+    top: 0;
+    left: 12.5em;
+    width: 1.5em;
+    height: 1.5em;
+}
+.box-star-2{
+    animation-delay: calc(1.5s * 0.125);
+    top: 2em;
+    left: 10em;
+    width: 1.75em;
+    height: 1.75em;
+}
+.box-star-3{
+    animation-delay: calc(1.5s * 0.25);
+    top: 8em;
+    left: 0;
+    width: 1.25em;
+    height: 1.25em;
+}
+.box-star-4{
+    top: 10.5em;
+    left: 0em;
+    width: 1.75em;
+    height: 1.75em;
+}
+.box-star-2{
+    animation-delay: calc(1.5s * 0.375);
+    top: 12em;
+    left: 1.8em;
+    width: 2.5em;
+    height: 2.5em;
+}

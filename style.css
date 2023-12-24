@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #411755;
+    background-color: #0c744c;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -24,7 +24,7 @@ body {
     position: absolute;
 }
 .box-tape-center, .box-tape-left, .box-tape-right{
-    background-color: #cd7baa;
+    background-color: #cf0e0e;
 }
 .box-tape {
     animation: bTape 1.5s ease-in-out infinite;
@@ -40,7 +40,7 @@ body {
     height: 100%;
 }
 .box-tape-left, .box-tape-right{
-    box-shadow: 0 0 0 0.7em #ee99c9 inset;
+    box-shadow: 0 0 0 0.7em #e20808 inset;
     top: 0.3em;
     width: 4em;
     height: 5em;
@@ -49,7 +49,7 @@ body {
 
 .box-tape-left::before,
 .box-tape-right::before {
-    background-color: #ee99c9;
+    background-color: #e20808;
     border-radius: inherit;
     content: "";
     display: block;
@@ -83,8 +83,8 @@ body {
 }
 .box-gifts{
     animation: box-Bounce 1.5s ease-in-out infinite;
-    background: linear-gradient(#ee99c9, #ee99c9) 50% 50% / 3.3em 100%
-    no-repeat, #ffcee9;
+    background: linear-gradient(#e20808, #e20808) 50% 50% / 3.3em 100%
+    no-repeat, #1b4d3c;
     border-radius: 1.5em;
     bottom: 0.5em;
     left: 3.3em;
@@ -100,8 +100,8 @@ body {
 }
 .box-gift {
     animation: box-Bonuce2 1.5s ease-in-out infinite;
-    background: linear-gradient(#ee99c9, #ee99c9) 50% 50% / 3.3em 100%
-    no-repeat, #ffcee9;
+    background: linear-gradient(#e20808, #e20808) 50% 50% / 3.3em 100%
+    no-repeat, #1b4d3c;
     bottom: 8.7em;
     left:  2.5em;
 }

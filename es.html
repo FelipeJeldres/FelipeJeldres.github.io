@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Jeldres</title>
+    <link rel="icon" href="img/imagen_2024-03-07_135312332-removebg-preview.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+<!---->            <img src="img/logoblanco.png" alt="Logo de la marca">
+        </div>
+        <div class="idioma">
+            <a href="es.html"> <img  src="img/vecteezy_circle-flag-of-spain_11571522.png">
+            <a href="index.html"><img src="img/vecteezy_circle-flag-of-uk_11571351.png">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+           </ul>            
+        </nav>
+        <a class="btn" href="#contact"><button>Contacto</button></a>
+
+<!---->        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a href="#about">Sobre mi</a>
+<!---->                <a href="#skills">Habilidades</a>
+<!---->                <a href="#projects">Proyectos</a>
+<!---->                <a href="#contact">Contacto</a>
+<!---->            </div>
+<!---->        </div>
+
+    </header>
+<!-- Hero Section -->
+<section class="hero" id="about">
+    <img
+      src="img/OIG3.jpg"
+      alt="jane-doe"
+      loading="lazy"
+      class="hero-img"
+    />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">Sobre mi</h2>
+      <p class="bio-text">
+        ¡Hola, Mundo! 👋 Soy Felipe Jeldres, programador web y analista de datos originario de Chile. Me considero bastante autodidacta , creativo y extrovertido. Considero que todo es posible con paciencie y un buen chocolate caliente.
+      </p>
+    </div>
+  </section>
+<!-- Skills section -->
+<section class="skills" id="skills">
+  <h2 class="skill-header">Mis Habilidades</h2>
+
+  <div class="skills-wrapper">
+    <div class="first-set animate__animated animate__pulse">
+      <div class="overlay">
+        <span class="percentage"> HTML5 90%</span>
+      </div>
+      <img
+        src="assets/icons/icons8-html-5.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+    <div class="first-set animate__animated animate__pulse">
+      <div class="overlay">
+        <span class="percentage">CSS 90%</span>
+      </div>
+      <img
+        src="assets/icons/icons8-css3.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+    <div class="first-set animate__animated animate__pulse">
+      <div class="overlay">
+        <span class="percentage">JavaScript 75%</span>
+      </div>
+      <img
+        src="assets/icons/icons8-javascript.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+    <div class="first-set animate__animated animate__pulse">
+      <div class="overlay">
+        <span class="percentage">PYTHON 85%</span>
+      </div>
+      <img
+        src="assets/icons/icons8-python.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+    <div class="first-set animate__animated animate__pulse">
+      <div class="overlay">
+        <span class="percentage">PowerBI 70%</span>
+      </div>
+      <img
+        src="assets/icons/icons8-power-bi.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+    <div class="first-set animate__animated animate__pulse">
+      <div class="overlay">
+        <span class="percentage">GIT 70%</span>
+      </div>
+      <img
+        src="assets/icons/icons8-git.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Proyectos</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="assets/images/Captura de pantalla 2024-03-07 165739.png"
+          alt="expense-tracker"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Jelicode</h3>
+        <p class="project-details">
+          JeliCode consta de un sitio web el cual tiene la funcion de ser un escritor de codigo HTML, CSS, y JavaScript 100% online en donde puedes vizualizar a tiempo real tu codigo. 
+        </p>
+        <a href="https://happy-mirzakhani-3d524b.netlify.app/" target="_blank" class="project-link">Click para ver</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="img/Sin título-1.png"
+          alt="netflic-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Te llevo App</h3>
+        <p class="project-details">
+          Fue un proyecto universitario de una aplicacion que consistia en estudiantes que podian prestar servicios de transporte de acercamiento a demas estudiantes para llegar a la institucion.
+        </p>
+        <a href="https://www.youtube.com/watch?v=UnOJaqIYPqA&feature=youtu.be" target="_blank" class="project-link">Click para ver</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="img/Australia-climate-map_MJC01.png"
+          alt="greeny-earth"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Analisis de datos del clima de Australia</h3>
+        <p class="project-details">
+          Consta de un analisis de datos en Python y vizualizado en Flourish con la finalidad de predecir la probabilidad que haya de lluvia durante el día siguiente en las 3 principales ciudades del sur de Autralia (Sídney, Melbourne y Canberra).
+        </p>
+        <a href="https://colab.research.google.com/drive/1YCIjtlGxeoix29t1_R2uLPP_iB76cI04?usp=drive_link" target="_blank" class="project-link">Click para ver</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section class="contact" id="contact">
+  <h2 class="contact-header">Contacto</h2>
+
+  <div class="contact-wrapper">
+    <div class="first-set animate__animated animate__pulse">
+      <a href="https://www.linkedin.com/in/felipe-jeldres-5b7651288/" target="_blank" rel="noopener noreferrer">
+        <img
+            src="assets/icons/icons8-linkedin-500.svg"
+            alt="LinkedIn"
+            loading="lazy"
+            class="icon icon-card"
+        />
+    </a>
+    <a href="https://github.com/FelipeJeldres" target="_blank" rel="noopener noreferrer">
+        <img
+            src="assets/icons/iconmonstr-github-1.svg"
+            alt="GitHub"
+            loading="lazy"
+            class="icon icon-card"
+        />
+    </a>
+    <a href="https://www.instagram.com/jelipe_dev/" target="_blank" rel="noopener noreferrer">
+        <img
+            src="assets/icons/icons8-instagram (1).svg"
+            alt="Instagram"
+            loading="lazy"
+            class="icon icon-card"
+        />
+    </a>
+    
+    </div>
+</section>
+
+ <!-- Scroll to top -->
+ <i class="scroll-up" id="scroll-up"
+ ><img
+   src="assets/icons/icons8-up-90.png"
+   class="socicon up-arrow"
+   alt=""
+/></i>
+ <!-- Footer section -->
+ <footer>
+    Creado por
+    <a href="https://github.com/FelipeJeldres" target="_blank"
+      >Felipe Jeldres</a
+    >
+  </p>
+</footer>
+
+<!---->    <script type="text/javascript" src="nav.js"></script>
+<script>
+  // Obtener la referencia al botón de scroll up
+  const scrollUpButton = document.getElementById('scroll-up');
+  
+  // Mostrar el botón de scroll up cuando el usuario se desplaza hacia abajo
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Cambia 300 por el número de píxeles que desees para que aparezca el botón
+      scrollUpButton.style.display = 'block';
+    } else {
+      scrollUpButton.style.display = 'none';
+    }
+  });
+  
+  // Desplazar hacia arriba cuando se hace clic en el botón de scroll up
+  scrollUpButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Desplazamiento suave
+    });
+  });
+  </script>
+
+</body>
+</html>
